@@ -9,7 +9,7 @@ number = [1, 5, 6, 7, 8, 9, 15, 16, 19]
 word_list = sentence.replace(".", "").split()
 for i, word in enumerate(word_list):
     if i+1 in number:
-        periodic_table[i+1] = word[:1:1]
+        periodic_table[i+1] = word[:1]
     else:
-        periodic_table[i+1] = word[:2:1]
+        periodic_table[i+1] = word[:2]
 print(periodic_table)
